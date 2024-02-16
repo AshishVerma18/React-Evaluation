@@ -64,6 +64,10 @@ const navigate=useNavigate()
             variant="outlined"
             onChange={formik.handleChange}
             value={formik.values.name}
+            error={
+              formik.touched.name && Boolean(formik.errors.name)
+            }
+            helperText={formik.touched.name && formik.errors.name}
           />
           <TextField
             required
@@ -76,6 +80,10 @@ const navigate=useNavigate()
             variant="outlined"
             onChange={formik.handleChange}
             value={formik.values.age}
+            error={
+              formik.touched.age && Boolean(formik.errors.age)
+            }
+            helperText={formik.touched.age && formik.errors.age}
           />
           <TextField
             required
@@ -88,6 +96,10 @@ const navigate=useNavigate()
             variant="outlined"
             onChange={formik.handleChange}
             value={formik.values.profession}
+            error={
+              formik.touched.profession && Boolean(formik.errors.profession)
+            }
+            helperText={formik.touched.profession && formik.errors.profession}
           />
         </DialogContent>
         <DialogActions>

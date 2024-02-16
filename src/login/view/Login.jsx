@@ -167,9 +167,6 @@ const Login = () => {
                 className={classes.submit}
               >
                 Login
-                {/* <>
-                  {loading === true ? <>{t.LoggingIn}</> : <>{t.ButtonLogin}</>}
-                </> */}
               </Button>
             </form>
           </Paper>
